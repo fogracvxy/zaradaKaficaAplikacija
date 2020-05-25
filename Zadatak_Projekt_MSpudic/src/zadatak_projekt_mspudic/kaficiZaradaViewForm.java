@@ -243,6 +243,7 @@ public class kaficiZaradaViewForm extends javax.swing.JFrame {
     	}
     public void gumbProsjecnoMjesecnoZaKaficPerformed(java.awt.event.ActionEvent evt) {
     	try {
+    		// treba dodat fix za taj dio provjere
     		if ((kaficiZaradaController.ispisSvihZarada().isEmpty())) {
     			JOptionPane.showMessageDialog(null, "Prazno je!", "Prazno!", JOptionPane.ERROR_MESSAGE);
     		}else {
