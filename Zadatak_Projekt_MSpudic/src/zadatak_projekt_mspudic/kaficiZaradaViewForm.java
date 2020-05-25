@@ -242,19 +242,17 @@ public class kaficiZaradaViewForm extends javax.swing.JFrame {
     	tekstMjesto.setText(kaficiZaradaController.ispisSvihZarada());
     	}
     public void gumbProsjecnoMjesecnoZaKaficPerformed(java.awt.event.ActionEvent evt) {
-    	try {
     		// treba dodat fix za taj dio provjere
-    		if ((kaficiZaradaController.ispisSvihZarada().isEmpty())) {
-    			JOptionPane.showMessageDialog(null, "Prazno je!", "Prazno!", JOptionPane.ERROR_MESSAGE);
-    		}else {
+    	if (tekstProsZarada.getText().isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Prazno je upisite ime kafica!", "Prazno!", JOptionPane.ERROR_MESSAGE);
+		}else if ((kaficiZaradaController.ispisSvihZarada().isEmpty() )) {
+			JOptionPane.showMessageDialog(null, "Prazno je!", "Prazno!", JOptionPane.ERROR_MESSAGE);
+			
+		}else {
     			tekstMjesto.setText(kaficiZaradaController.ispisProsjecneZaradeZaOdredeniKafic(tekstProsZarada.getText()));
     		}
     		
     	}
-    	catch (Exception e) {
-    		JOptionPane.showMessageDialog(null, "Unesite ime kafica i kliknite", "Prazni unos", JOptionPane.ERROR_MESSAGE);
-    	}
-    }
     private void gumbUnosActionPerformed(java.awt.event.ActionEvent evt) {
         try {
             String kafic = tekstKafic1.getText();
