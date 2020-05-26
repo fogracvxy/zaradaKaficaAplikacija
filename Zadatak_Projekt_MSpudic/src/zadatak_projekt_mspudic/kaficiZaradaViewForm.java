@@ -101,7 +101,7 @@ public class kaficiZaradaViewForm extends javax.swing.JFrame {
         	}
         });
         
-        JLabel lblNewLabel_1 = new JLabel("Unesite naziv kafica za ispis projecne zarade");
+        JLabel lblNewLabel_1 = new JLabel("Unesite naziv kafica za ispis prosjecne zarade");
         
         JButton gumbBrisanjeSvega = new JButton("Brisi zadnji unos");
         gumbBrisanjeSvega.addActionListener(new ActionListener() {
