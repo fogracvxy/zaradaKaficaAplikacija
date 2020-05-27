@@ -17,6 +17,6 @@ Osnovna funkcionalnost aplikacije obuhvaća:
  
  8.Obavještavanje korisnika o akcijama ukoliko je potrebno, a da to ne remeti njegov rad, te naglasiti važnija upozorenja
  
-#Dodatno
+# Dodatno
 
 Napravio : Marin Spudić
