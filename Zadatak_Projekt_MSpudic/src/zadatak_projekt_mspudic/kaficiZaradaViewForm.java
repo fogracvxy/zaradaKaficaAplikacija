@@ -9,12 +9,12 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 /**
  *
  * @author MSpudic
  */
+
 public class kaficiZaradaViewForm extends javax.swing.JFrame {
 
     public kaficiZaradaViewForm() {
@@ -22,7 +22,7 @@ public class kaficiZaradaViewForm extends javax.swing.JFrame {
         initComponents();
     }
 
-    @SuppressWarnings("unchecked")
+
     private void initComponents() {
 
         tekstKafic1 = new javax.swing.JTextField();
@@ -246,9 +246,9 @@ public class kaficiZaradaViewForm extends javax.swing.JFrame {
         // treba dodat fix za taj dio provjere
         if (tekstProsZarada.getText().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Prazno je upisite ime kafica!", "Prazno!", JOptionPane.ERROR_MESSAGE);
-        } else if ((kaficiZaradaController.ispisSvihZarada().isEmpty())) {
+        }else if ((kaficiZaradaController.ispisSvihZarada().isEmpty())) {
             JOptionPane.showMessageDialog(null, "Prazno je!", "Prazno!", JOptionPane.ERROR_MESSAGE);
-        } else {
+        }else {
             tekstMjesto.setText(kaficiZaradaController.ispisProsjecneZaradeZaOdredeniKafic(tekstProsZarada.getText()));
         }
 
